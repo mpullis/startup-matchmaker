@@ -1,0 +1,168 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header{
+	background-color: black;
+	height:60px;
+	border-bottom: 4px solid yellow;
+	box-shadow: 1px 1px 3px;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.logo {
+  font-family: 'Merriweather', Serif;
+  font-weight: 800;
+  font-size: 30px;
+  padding: 10px 20px;
+  float: left;
+}
+
+
+.nav-container {
+  width: 50%;
+  float: right;
+}
+
+.nav-links {
+  width: 100%;
+  float: right;
+}
+
+li {
+	 padding: 20px 10px;
+	 float: right;
+	 width: 20%;
+     display: block;
+     text-align:center;
+}
+
+a.nav:link,
+a.nav:visited{
+	color: white;
+	text-decoration: none;
+}
+a.nav:hover{
+	color:yellow;
+}
+.active{
+	background-color:gray;
+}
+
+a.logo:link,
+a.logo:visited {
+	color: yellow;
+	text-decoration: none;
+}
+.bignav{
+	font-family: 'Oswald', 'Arial', 'Helvetica', sans-serif;
+	text-transform:uppercase;
+}
+
+.smallnav{
+	font-family: 'Source Sans Pro', 'Arial', 'Helvetica', sans-serif;
+	text-transform:capitalize;
+}
+
+h2{
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 30px;
+}
+
+.tagline{
+	height: 70px;
+	background-color:#c6c6c6;
+	text-align:center;
+	padding:20px;
+}
+
+del{
+	color:#666;
+}
+
+ins{
+	border-bottom:2px solid yellow;
+	text-decoration: none;
+}
+.hero {
+	background-image: url("../images/coworking.jpg");
+	width:100%;
+	height:467px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	clear: both;
+}
+.pitch{
+	background-color: rgba(255,255,255,.8);
+	padding: 40px 30px;
+	width:30%;
+	float:right;
+	margin:50px 40px;
+}
+
+h1{
+	font-family: 'Source Sans Pro', 'Arial', 'Helvetica', sans-serif;
+	font-size:30px;
+	font-weight: 700;
+}
+
+p{
+	font-family: 'Source Sans Pro', 'Arial', 'Helvetica', sans-serif;
+	font-size:16px;
+	font-weight: 400;
+	line-height: 20px;
+	padding-top: 15px;
+}
+
+.main_cta {
+	background-color: yellow;
+	border-radius: 5px;
+	padding: 5px 20px;
+	font-family: 'Oswald', 'Arial', 'Helvetica', sans-serif;
+	text-transform:uppercase;
+	font-size: 16px;
+	display:inline-block;
+	text-align: center;
+	width:100%;
+	box-shadow: 1px 1px 3px;
+}
+
+a.main_cta:link,
+a.main_cta:visited {
+	color: black;
+	text-decoration: none;
+	margin-top: 50px;
+}
